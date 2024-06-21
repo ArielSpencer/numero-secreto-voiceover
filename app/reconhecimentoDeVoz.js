@@ -20,3 +20,5 @@ function exibirChuteNaTela(chute) {
     <div>Você disse:</div>
         <span class="box__chute">${chute}</span>`
 }
+
+recognition.addEventListener('end', () => recognition.start());

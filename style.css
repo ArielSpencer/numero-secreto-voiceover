@@ -5,6 +5,8 @@
     --cor-primaria: #C4ED20;
     --cor-backgrund: #111111;
     --background: rgba(0, 0, 0, 0.53);
+    --borda: #ffffff58;
+    --branco: #FFFFFF;
 }
 
 body {
@@ -25,11 +27,12 @@ body {
 .box {
     background: var(--background);
     padding: 10% 5%;
-    border: 3px solid #ffffff58;
+    border: 3px solid var(--borda);
     border-radius: 1em;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 4em;
 }
 
@@ -42,6 +45,11 @@ h3 {
 .mensagem {
     font-size: 2em;
     margin-top: 40px;
+
+}
+
+.fa-solid {
+    margin-top: 8%;
 }
 
 .box__chute {
@@ -50,4 +58,58 @@ h3 {
     font-size: 3em;
     padding: 10px;
     margin: 20px;
+}
+
+.btn-jogar {
+    margin-top: 10%;
+    padding: 1em 2.5em;
+    border-radius: 1em;
+    background: var(--cor-primaria);
+
+    box-shadow:
+        0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 188px 52px rgba(0, 0, 0, 0.01),
+        0px 120px 48px rgba(0, 0, 0, 0.04),
+        0px 68px 41px rgba(0, 0, 0, 0.15),
+        0px 30px 30px rgba(0, 0, 0, 0.26),
+        0px 8px 17px rgba(0, 0, 0, 0.29),
+        inset 0px 6px 8px rgba(255, 255, 255, 0.1),
+        inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+
+    font-size: 1em;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-jogar:hover {
+    border-radius: 1.1em;
+    padding: 1em 3em;
+}
+
+.rodape {
+    background: var(--background);
+    border-top: 3px solid var(--borda);
+    width: 100%;
+    height: 5vh;
+
+    display: flex;
+    gap: 0.3em;
+    bottom: 0;
+    position: fixed;
+
+    justify-content: center;
+    align-items: center;
+
+    color: var(--branco);
+    font-weight: bold;
+}
+
+.rodape__link {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.rodape__link:hover {
+    color: var(--cor-primaria);
 }
