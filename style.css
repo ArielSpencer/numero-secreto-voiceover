@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+:root {
+    --fonte-principal: "Maven Pro", sans-serif;
+    --cor-primaria: #C4ED20;
+    --cor-backgrund: #111111;
+    --background: rgba(0, 0, 0, 0.53);
+}
+
+body {
+    background: url("assets/background-futuristic-waves.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.box {
+    background: var(--background);
+    padding: 10% 5%;
+    border: 3px solid #ffffff58;
+    border-radius: 1em;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.mensagem {
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+.box__chute {
+    border: 1.5px solid var(--cor-primaria);
+    display: inline-block;
+    font-size: 3em;
+    padding: 10px;
+    margin: 20px;
+}
